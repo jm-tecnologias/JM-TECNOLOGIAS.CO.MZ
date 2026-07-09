@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="content-language" content="pt-MZ">
+  <title>Produtos Desenvolvidos | JM Tecnologias</title>
+  <meta name="description" content="Galeria de produtos e softwares desenvolvidos pela JM Tecnologias para empresas em Mocambique.">
+  <meta name="keywords" content="produtos JM Tecnologias, software desenvolvido em Mocambique, sistemas empresariais, JM Vision Intelligence System">
+  <meta name="author" content="JM Tecnologias">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://jm-tecnologias.co.mz/produtos.html">
+
+  <meta property="og:locale" content="pt_MZ">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JM Tecnologias">
+  <meta property="og:title" content="Produtos Desenvolvidos | JM Tecnologias">
+  <meta property="og:description" content="Conheca produtos e softwares desenvolvidos pela JM Tecnologias.">
+  <meta property="og:url" content="https://jm-tecnologias.co.mz/produtos.html">
+  <meta property="og:image" content="https://jm-tecnologias.co.mz/assets/img/jm-seo-cover.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Produtos Desenvolvidos | JM Tecnologias">
+  <meta name="twitter:description" content="Galeria de produtos e softwares desenvolvidos pela JM Tecnologias.">
+  <meta name="twitter:image" content="https://jm-tecnologias.co.mz/assets/img/jm-seo-cover.jpg">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/jm-custom.css" rel="stylesheet">
+
+  <style>
+    .products-page {
+      background: #0b1220;
+      color: #e5edf7;
+    }
+
+    .products-hero {
+      position: relative;
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      padding: 138px 0 82px;
+      overflow: hidden;
+      background:
+        linear-gradient(115deg, rgba(11, 18, 32, .96) 0%, rgba(11, 18, 32, .86) 54%, rgba(15, 32, 55, .7) 100%),
+        url("assets/img/Software-Medida.jpg") center/cover no-repeat;
+    }
+
+    .products-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 120px;
+      background: linear-gradient(180deg, rgba(11, 18, 32, 0), #0b1220 88%);
+      pointer-events: none;
+    }
+
+    .products-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .products-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid rgba(45, 212, 191, .38);
+      border-radius: 999px;
+      background: rgba(15, 23, 42, .68);
+      color: #7dd3fc;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .products-hero h1 {
+      color: #fff;
+      font-size: clamp(2.35rem, 5vw, 4.7rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+      max-width: 860px;
+    }
+
+    .products-hero p {
+      color: #cbd5e1;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      max-width: 760px;
+      margin-bottom: 0;
+    }
+
+    .products-section {
+      padding: 86px 0;
+      background: #0b1220;
+    }
+
+    .products-section-heading {
+      max-width: 800px;
+      margin-bottom: 38px;
+    }
+
+    .products-section-heading span {
+      color: #38bdf8;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: .78rem;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .products-section-heading h2 {
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      margin-bottom: 14px;
+    }
+
+    .products-section-heading p {
+      color: #94a3b8;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .product-card {
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(15, 23, 42, .78);
+      border: 1px solid rgba(148, 163, 184, .16);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(125, 211, 252, .46);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, .32);
+    }
+
+    .product-card-media {
+      position: relative;
+      min-height: 245px;
+      background:
+        linear-gradient(135deg, rgba(56, 189, 248, .2), rgba(34, 197, 94, .16)),
+        url("assets/img/Software-Medida.jpg") center/cover no-repeat;
+    }
+
+    .product-card-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(2, 6, 23, 0), rgba(2, 6, 23, .82));
+    }
+
+    .product-card-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 2;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, .84);
+      border: 1px solid rgba(125, 211, 252, .28);
+      color: #bfdbfe;
+      font-size: .78rem;
+      font-weight: 800;
+    }
+
+    .product-card-snapshot {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      z-index: 2;
+      border: 1px solid rgba(148, 163, 184, .22);
+      background: rgba(2, 6, 23, .78);
+      border-radius: 8px;
+      padding: 13px;
+      backdrop-filter: blur(10px);
+    }
+
+    .snapshot-row {
+      display: grid;
+      grid-template-columns: .8fr 1.3fr .9fr;
+      gap: 8px;
+    }
+
+    .snapshot-cell {
+      height: 48px;
+      border-radius: 6px;
+      background: rgba(30, 41, 59, .92);
+      border: 1px solid rgba(148, 163, 184, .12);
+    }
+
+    .snapshot-cell:nth-child(2) {
+      background: rgba(14, 165, 233, .28);
+    }
+
+    .product-card-body {
+      padding: 26px;
+    }
+
+    .product-card-body h3 {
+      color: #fff;
+      font-size: 1.35rem;
+      letter-spacing: 0;
+      margin-bottom: 12px;
+    }
+
+    .product-card-body p {
+      color: #94a3b8;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .product-tags span {
+      padding: 6px 9px;
+      border-radius: 999px;
+      color: #cbd5e1;
+      font-size: .78rem;
+      background: rgba(30, 41, 59, .9);
+      border: 1px solid rgba(148, 163, 184, .14);
+    }
+
+    .coming-soon-card {
+      height: 100%;
+      min-height: 100%;
+      border-radius: 8px;
+      padding: 28px;
+      background: rgba(15, 23, 42, .46);
+      border: 1px dashed rgba(148, 163, 184, .3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .coming-soon-card i {
+      width: 45px;
+      height: 45px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(125, 211, 252, .14);
+      color: #7dd3fc;
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+    }
+
+    .coming-soon-card h3 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .coming-soon-card p {
+      color: #94a3b8;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .products-cta {
+      padding: 76px 0;
+      background:
+        linear-gradient(120deg, rgba(56, 189, 248, .18), rgba(34, 197, 94, .12)),
+        #0f172a;
+    }
+
+    .products-cta-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 36px;
+      border-radius: 8px;
+      background: rgba(2, 6, 23, .56);
+      border: 1px solid rgba(148, 163, 184, .16);
+    }
+
+    .products-cta h2 {
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: 0;
+    }
+
+    .products-cta p {
+      color: #cbd5e1;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 991px) {
+      .products-hero {
+        min-height: auto;
+        padding-top: 118px;
+      }
+
+      .products-cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body class="products-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top jm-header">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between jm-header-inner">
+    <a href="index.html" class="logo d-flex align-items-center jm-logo" aria-label="JM Tecnologias">
+      <img src="assets/img/isotipo.svg" alt="" class="jm-logo-mark" aria-hidden="true">
+      <span class="sitename">JM Tecnologias</span>
+    </a>
+    <nav id="navmenu" class="navmenu jm-navmenu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Nossos Serviços</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="produtos.html" class="active" aria-current="page">Produtos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li class="nav-cta-item"><a href="contactos.html#formulario" class="nav-cta-link">Solicitar proposta</a></li>
+        <li class="mobile-menu-extra">
+          <div class="mobile-menu-extra-card" aria-label="Contacto rápido da empresa">
+            <span class="mobile-menu-extra-label">Contacto rápido</span>
+            <div class="mobile-menu-socials">
+              <a href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da empresa"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+              <a href="mailto:comercial@jm-tecnologias.co.mz" aria-label="Enviar e-mail"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+              <a href="tel:+258847100793" aria-label="Ligar para a empresa"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="products-hero" aria-label="Galeria de produtos">
+    <div class="container">
+      <div data-aos="fade-up">
+        <span class="products-kicker"><i class="bi bi-grid-1x2" aria-hidden="true"></i> Produtos desenvolvidos</span>
+        <h1>Softwares criados para resolver problemas reais de operação.</h1>
+        <p>
+          Conheça os produtos desenvolvidos pela JM Tecnologias. Cada solução nasce de uma necessidade concreta e combina análise, engenharia de software, interface profissional e capacidade de evolução.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section" aria-labelledby="produtos-heading">
+    <div class="container">
+      <div class="products-section-heading" data-aos="fade-up">
+        <span>Galeria</span>
+        <h2 id="produtos-heading">Escolha o produto que deseja conhecer.</h2>
+        <p>
+          Esta página funciona como vitrine dos produtos já desenvolvidos pela JM Tecnologias. O visitante pode consultar a visão geral e abrir a página individual de cada software.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7" data-aos="fade-up">
+          <article class="product-card">
+            <div class="product-card-media">
+              <span class="product-card-badge">Software desktop</span>
+              <div class="product-card-snapshot" aria-hidden="true">
+                <div class="snapshot-row">
+                  <div class="snapshot-cell"></div>
+                  <div class="snapshot-cell"></div>
+                  <div class="snapshot-cell"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h3>JM Vision Intelligence System</h3>
+              <p>
+                Aplicação desktop JavaFX para organização, visualização e análise técnica de imagens, com leitura de metadados EXIF, coordenadas GPS, abertura em mapa e relatórios PDF.
+              </p>
+              <div class="product-tags" aria-label="Tecnologias e recursos">
+                <span>JavaFX</span>
+                <span>EXIF</span>
+                <span>GPS</span>
+                <span>PDF</span>
+                <span>Desktop</span>
+              </div>
+              <a href="jm-vision-intelligence-system.html" class="btn-corporate btn-corporate-primary">Ver detalhes do produto</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+          <article class="coming-soon-card">
+            <i class="bi bi-plus-square" aria-hidden="true"></i>
+            <h3>Novos produtos em desenvolvimento</h3>
+            <p>
+              Esta galeria pode receber outros sistemas desenvolvidos pela JM Tecnologias, como plataformas web, sistemas internos, aplicações móveis, automações empresariais e soluções de monitoria.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-cta" aria-labelledby="produtos-cta-heading">
+    <div class="container">
+      <div class="products-cta-box" data-aos="fade-up">
+        <div>
+          <h2 id="produtos-cta-heading">Precisa de um produto digital para a sua empresa?</h2>
+          <p>A JM Tecnologias pode desenhar, desenvolver e manter uma solução ajustada ao seu processo de trabalho.</p>
+        </div>
+        <a href="contactos.html#formulario" class="btn-corporate btn-corporate-primary">Solicitar proposta</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer" class="footer footer-corporate">
+  <div class="container">
+    <div class="footer-main-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="logo d-flex align-items-center jm-logo footer-logo" aria-label="JM Tecnologias">
+          <img src="assets/img/isotipo.svg" alt="" class="jm-logo-mark" aria-hidden="true">
+          <span class="sitename">JM Tecnologias</span>
+        </a>
+        <p>Websites, software, e-mails corporativos e soluções tecnológicas para empresas que precisam de mais estrutura, presença e execução profissional.</p>
+        <div class="footer-brand-social">
+          <a href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          <a href="mailto:comercial@jm-tecnologias.co.mz" class="footer-social-link" aria-label="E-mail"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          <a href="tel:+258847100793" class="footer-social-link" aria-label="Telefone"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicos.html">Nossos Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Produtos</h4>
+        <ul>
+          <li><a href="jm-vision-intelligence-system.html">JM Vision Intelligence System</a></li>
+          <li><a href="contactos.html#formulario">Solicitar software à medida</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contacto</h4>
+        <ul class="footer-contact-list">
+          <li>Bairro Patrice Lumumba - Infulene, Quarteirão n.º 2, Rua A, 36868, Matola-Machava</li>
+          <li><a href="tel:+258847100793">+258 84 710 0793</a></li>
+          <li><a href="tel:+258878201993">+258 87 820 1993</a></li>
+          <li><a href="mailto:comercial@jm-tecnologias.co.mz">comercial@jm-tecnologias.co.mz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom-row">
+      <p>© 2025 <strong>JM Tecnologias</strong> - Todos os direitos reservados.</p>
+      <div class="footer-legal-links">
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos-condicoes.html">Termos de Uso</a>
+      </div>
+      <a class="footer-inline-cta" href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i> Falar com a equipa
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-actions" aria-label="Ações rápidas">
+  <a href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+</div>
+<div id="preloader" aria-hidden="true"></div>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jm-custom.js"></script>
+</body>
+</html>

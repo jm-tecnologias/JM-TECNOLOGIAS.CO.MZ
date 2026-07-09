@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="content-language" content="pt-MZ">
+  <title>JM Vision Intelligence System | Produto desenvolvido pela JM Tecnologias</title>
+  <meta name="description" content="JM Vision Intelligence System: software desktop JavaFX desenvolvido pela JM Tecnologias para analise de imagens, metadados EXIF, GPS, mapas e relatorios PDF.">
+  <meta name="keywords" content="JM Vision Intelligence System, JM Tecnologias, software em Mocambique, analise de imagens, metadados EXIF, JavaFX, relatorios PDF, software desktop">
+  <meta name="author" content="JM Tecnologias">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://jm-tecnologias.co.mz/jm-vision-intelligence-system.html">
+
+  <meta property="og:locale" content="pt_MZ">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="JM Tecnologias">
+  <meta property="og:title" content="JM Vision Intelligence System | Produto desenvolvido pela JM Tecnologias">
+  <meta property="og:description" content="Aplicacao desktop para organizacao, visualizacao, analise EXIF, geolocalizacao e relatorios tecnicos de imagens.">
+  <meta property="og:url" content="https://jm-tecnologias.co.mz/jm-vision-intelligence-system.html">
+  <meta property="og:image" content="https://jm-tecnologias.co.mz/assets/img/jm-seo-cover.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JM Vision Intelligence System">
+  <meta name="twitter:description" content="Software desktop de analise inteligente de imagens desenvolvido pela JM Tecnologias.">
+  <meta name="twitter:image" content="https://jm-tecnologias.co.mz/assets/img/jm-seo-cover.jpg">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/jm-custom.css" rel="stylesheet">
+
+  <style>
+    .product-page {
+      background: #0b1220;
+      color: #e5edf7;
+    }
+
+    .product-hero {
+      position: relative;
+      min-height: 96vh;
+      display: flex;
+      align-items: center;
+      padding: 138px 0 88px;
+      overflow: hidden;
+      background:
+        linear-gradient(115deg, rgba(11, 18, 32, .96) 0%, rgba(11, 18, 32, .86) 48%, rgba(15, 32, 55, .72) 100%),
+        url("assets/img/Software-Medida.jpg") center/cover no-repeat;
+    }
+
+    .product-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 150px;
+      background: linear-gradient(180deg, rgba(11, 18, 32, 0), #0b1220 88%);
+      pointer-events: none;
+    }
+
+    .product-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .product-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid rgba(45, 212, 191, .38);
+      border-radius: 999px;
+      background: rgba(15, 23, 42, .68);
+      color: #7dd3fc;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .product-hero h1 {
+      color: #fff;
+      font-size: clamp(2.45rem, 5vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+      margin-bottom: 22px;
+      max-width: 820px;
+    }
+
+    .product-hero p {
+      color: #cbd5e1;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .product-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .product-proof-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 760px;
+    }
+
+    .product-proof {
+      border: 1px solid rgba(148, 163, 184, .18);
+      background: rgba(15, 23, 42, .68);
+      border-radius: 8px;
+      padding: 15px;
+      backdrop-filter: blur(12px);
+    }
+
+    .product-proof strong {
+      display: block;
+      color: #fff;
+      font-size: 1.45rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .product-proof span {
+      color: #94a3b8;
+      font-size: .88rem;
+    }
+
+    .product-console {
+      border: 1px solid rgba(148, 163, 184, .22);
+      background: rgba(2, 6, 23, .72);
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .42);
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+    }
+
+    .product-console-top {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 13px 15px;
+      border-bottom: 1px solid rgba(148, 163, 184, .16);
+      background: rgba(15, 23, 42, .88);
+    }
+
+    .product-console-top span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #38bdf8;
+    }
+
+    .product-console-top span:nth-child(2) {
+      background: #22c55e;
+    }
+
+    .product-console-top span:nth-child(3) {
+      background: #f59e0b;
+    }
+
+    .product-screen {
+      display: grid;
+      grid-template-columns: .82fr 1.38fr .95fr;
+      min-height: 430px;
+    }
+
+    .product-tree,
+    .product-viewer,
+    .product-meta {
+      padding: 18px;
+      border-right: 1px solid rgba(148, 163, 184, .14);
+    }
+
+    .product-meta {
+      border-right: 0;
+    }
+
+    .product-tree-title,
+    .product-panel-title {
+      color: #e2e8f0;
+      font-size: .78rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .tree-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cbd5e1;
+      font-size: .88rem;
+      padding: 8px 0;
+    }
+
+    .tree-line i {
+      color: #38bdf8;
+    }
+
+    .image-preview-box {
+      height: 255px;
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(56, 189, 248, .24), rgba(34, 197, 94, .18)),
+        url("assets/img/website-creation.jpeg") center/cover no-repeat;
+      border: 1px solid rgba(125, 211, 252, .26);
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-preview-box::after {
+      content: "EXIF + GPS";
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      padding: 7px 10px;
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 800;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, .76);
+    }
+
+    .thumb-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 9px;
+    }
+
+    .thumb-item {
+      height: 56px;
+      border-radius: 6px;
+      background: rgba(30, 41, 59, .9);
+      border: 1px solid rgba(148, 163, 184, .16);
+    }
+
+    .thumb-item:nth-child(2) {
+      background: rgba(14, 165, 233, .28);
+    }
+
+    .meta-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(148, 163, 184, .12);
+      font-size: .84rem;
+    }
+
+    .meta-item span {
+      color: #94a3b8;
+    }
+
+    .meta-item strong {
+      color: #e2e8f0;
+      text-align: right;
+    }
+
+    .section-product {
+      padding: 88px 0;
+      background: #0b1220;
+    }
+
+    .section-product.alt {
+      background: #111827;
+    }
+
+    .product-section-heading {
+      max-width: 820px;
+      margin-bottom: 42px;
+    }
+
+    .product-section-heading .kicker {
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      font-weight: 800;
+      font-size: .78rem;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .product-section-heading h2 {
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      margin-bottom: 14px;
+    }
+
+    .product-section-heading p {
+      color: #94a3b8;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .feature-tile,
+    .audience-tile,
+    .tech-tile {
+      height: 100%;
+      padding: 25px;
+      border-radius: 8px;
+      background: rgba(15, 23, 42, .78);
+      border: 1px solid rgba(148, 163, 184, .16);
+    }
+
+    .feature-tile i,
+    .audience-tile i,
+    .tech-tile i {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      color: #08111f;
+      background: #7dd3fc;
+      margin-bottom: 18px;
+      font-size: 1.2rem;
+    }
+
+    .feature-tile h3,
+    .audience-tile h3,
+    .tech-tile h3 {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-tile p,
+    .audience-tile p,
+    .tech-tile p {
+      color: #94a3b8;
+      line-height: 1.7;
+      margin: 0;
+      font-size: .95rem;
+    }
+
+    .workflow-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .workflow-step {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 18px;
+      border-radius: 8px;
+      background: rgba(15, 23, 42, .74);
+      border: 1px solid rgba(148, 163, 184, .15);
+    }
+
+    .workflow-step span {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #38bdf8;
+      color: #07111f;
+      font-weight: 800;
+    }
+
+    .workflow-step h3 {
+      color: #fff;
+      font-size: 1rem;
+      margin: 0 0 6px;
+    }
+
+    .workflow-step p {
+      color: #94a3b8;
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    .product-cta {
+      padding: 76px 0;
+      background:
+        linear-gradient(120deg, rgba(56, 189, 248, .18), rgba(34, 197, 94, .12)),
+        #0f172a;
+    }
+
+    .product-cta-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 36px;
+      border-radius: 8px;
+      background: rgba(2, 6, 23, .56);
+      border: 1px solid rgba(148, 163, 184, .16);
+    }
+
+    .product-cta h2 {
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: 0;
+    }
+
+    .product-cta p {
+      color: #cbd5e1;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 991px) {
+      .product-hero {
+        min-height: auto;
+        padding-top: 118px;
+      }
+
+      .product-proof-row,
+      .product-screen {
+        grid-template-columns: 1fr;
+      }
+
+      .product-tree,
+      .product-viewer,
+      .product-meta {
+        border-right: 0;
+        border-bottom: 1px solid rgba(148, 163, 184, .14);
+      }
+
+      .product-meta {
+        border-bottom: 0;
+      }
+
+      .product-console {
+        margin-top: 34px;
+      }
+
+      .product-cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "JM Vision Intelligence System",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Windows",
+    "description": "Aplicacao desktop JavaFX para organizacao, visualizacao e analise tecnica de imagens, com leitura EXIF, GPS, mapas e relatorios PDF.",
+    "creator": {
+      "@type": "Organization",
+      "name": "JM Tecnologias",
+      "url": "https://jm-tecnologias.co.mz/"
+    },
+    "softwareVersion": "1.0",
+    "inLanguage": "pt-MZ"
+  }
+  </script>
+</head>
+
+<body class="product-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top jm-header">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between jm-header-inner">
+    <a href="index.html" class="logo d-flex align-items-center jm-logo" aria-label="JM Tecnologias">
+      <img src="assets/img/isotipo.svg" alt="" class="jm-logo-mark" aria-hidden="true">
+      <span class="sitename">JM Tecnologias</span>
+    </a>
+    <nav id="navmenu" class="navmenu jm-navmenu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Nossos Serviços</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="produtos.html" class="active" aria-current="page">Produtos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li class="nav-cta-item"><a href="contactos.html#formulario" class="nav-cta-link">Solicitar proposta</a></li>
+        <li class="mobile-menu-extra">
+          <div class="mobile-menu-extra-card" aria-label="Contacto rápido da empresa">
+            <span class="mobile-menu-extra-label">Contacto rápido</span>
+            <div class="mobile-menu-socials">
+              <a href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da empresa"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+              <a href="mailto:comercial@jm-tecnologias.co.mz" aria-label="Enviar e-mail"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+              <a href="tel:+258847100793" aria-label="Ligar para a empresa"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="product-hero" aria-label="JM Vision Intelligence System">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7" data-aos="fade-up">
+          <span class="product-badge"><i class="bi bi-stars" aria-hidden="true"></i> Produto desenvolvido pela JM Tecnologias</span>
+          <h1>JM Vision Intelligence System</h1>
+          <p>
+            Uma aplicação desktop desenvolvida em JavaFX para organizar, visualizar e analisar imagens com leitura de metadados EXIF, identificação de coordenadas GPS, abertura em mapa e geração de relatórios técnicos em PDF.
+          </p>
+          <div class="product-actions">
+            <a href="contactos.html#formulario" class="btn-corporate btn-corporate-primary">Solicitar demonstração</a>
+            <a href="#funcionalidades" class="btn-corporate btn-corporate-secondary">Ver funcionalidades</a>
+            <a href="produtos.html" class="btn-corporate btn-corporate-secondary">Voltar à galeria</a>
+          </div>
+          <div class="product-proof-row" aria-label="Destaques do produto">
+            <div class="product-proof">
+              <strong>JavaFX</strong>
+              <span>Aplicação desktop moderna</span>
+            </div>
+            <div class="product-proof">
+              <strong>EXIF</strong>
+              <span>Leitura técnica de metadados</span>
+            </div>
+            <div class="product-proof">
+              <strong>PDF</strong>
+              <span>Relatórios profissionais</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+          <div class="product-console" aria-label="Representação visual do sistema">
+            <div class="product-console-top" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="product-screen">
+              <div class="product-tree">
+                <div class="product-tree-title">File Explore</div>
+                <div class="tree-line"><i class="bi bi-folder2-open"></i> Relatórios</div>
+                <div class="tree-line"><i class="bi bi-folder2"></i> Evidências</div>
+                <div class="tree-line"><i class="bi bi-folder2"></i> Importadas</div>
+                <div class="tree-line"><i class="bi bi-image"></i> IMG_2048.jpg</div>
+                <div class="tree-line"><i class="bi bi-image"></i> IMG_2051.jpg</div>
+              </div>
+              <div class="product-viewer">
+                <div class="product-panel-title">Image Viewer</div>
+                <div class="image-preview-box"></div>
+                <div class="thumb-row" aria-hidden="true">
+                  <div class="thumb-item"></div>
+                  <div class="thumb-item"></div>
+                  <div class="thumb-item"></div>
+                  <div class="thumb-item"></div>
+                </div>
+              </div>
+              <div class="product-meta">
+                <div class="product-panel-title">Metadata</div>
+                <div class="meta-item"><span>Camera</span><strong>Canon EOS</strong></div>
+                <div class="meta-item"><span>ISO</span><strong>200</strong></div>
+                <div class="meta-item"><span>GPS</span><strong>-25.96, 32.58</strong></div>
+                <div class="meta-item"><span>Cidade</span><strong>Maputo</strong></div>
+                <div class="meta-item"><span>Relatório</span><strong>PDF</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-product" id="visao-geral" aria-labelledby="visao-heading">
+    <div class="container">
+      <div class="product-section-heading" data-aos="fade-up">
+        <span class="kicker">Visão do produto</span>
+        <h2 id="visao-heading">Análise de imagens com organização, contexto e evidência documental.</h2>
+        <p>
+          O JM Vision Intelligence System foi concebido para apoiar equipas que precisam transformar imagens dispersas em informação útil. A ferramenta centraliza a navegação, a leitura técnica, a localização geográfica e a geração de relatórios num fluxo único.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="feature-tile">
+            <i class="bi bi-folder-check" aria-hidden="true"></i>
+            <h3>Organização local</h3>
+            <p>Estrutura de pastas própria para importar, navegar e gerir imagens dentro do ambiente do utilizador.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <article class="feature-tile">
+            <i class="bi bi-camera" aria-hidden="true"></i>
+            <h3>Leitura técnica</h3>
+            <p>Extração de metadados como fabricante, modelo, ISO, exposição, distância focal e datas da imagem.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <article class="feature-tile">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+            <h3>Contexto geográfico</h3>
+            <p>Identificação de coordenadas GPS e abertura da localização em mapa quando a imagem contém dados válidos.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <article class="feature-tile">
+            <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+            <h3>Relatórios PDF</h3>
+            <p>Geração de relatórios técnicos com dados da imagem e notas do utilizador para documentação formal.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-product alt" id="funcionalidades" aria-labelledby="funcionalidades-heading">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5" data-aos="fade-up">
+          <div class="product-section-heading">
+            <span class="kicker">Funcionalidades</span>
+            <h2 id="funcionalidades-heading">Construído para o fluxo real de análise.</h2>
+            <p>
+              A aplicação combina interface desktop, processamento local de ficheiros, leitura de metadados e emissão de relatórios, mantendo o foco na produtividade de quem trabalha com imagens.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="workflow-list">
+            <article class="workflow-step">
+              <span>01</span>
+              <div>
+                <h3>Selecionar pasta e carregar miniaturas</h3>
+                <p>O utilizador navega pela árvore de diretórios e o sistema apresenta as imagens disponíveis para inspeção.</p>
+              </div>
+            </article>
+            <article class="workflow-step">
+              <span>02</span>
+              <div>
+                <h3>Visualizar imagem com zoom, pan e rotação</h3>
+                <p>O preview central permite uma leitura visual mais confortável, incluindo aproximação, deslocamento e rotação.</p>
+              </div>
+            </article>
+            <article class="workflow-step">
+              <span>03</span>
+              <div>
+                <h3>Extrair EXIF e geolocalização</h3>
+                <p>O sistema lê os metadados disponíveis e apresenta dados técnicos, datas, GPS e informação geográfica enriquecida.</p>
+              </div>
+            </article>
+            <article class="workflow-step">
+              <span>04</span>
+              <div>
+                <h3>Gerar relatório técnico</h3>
+                <p>Com uma ou várias imagens selecionadas, o utilizador pode gerar documentos PDF para arquivo, partilha ou análise posterior.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-product" aria-labelledby="publico-heading">
+    <div class="container">
+      <div class="product-section-heading" data-aos="fade-up">
+        <span class="kicker">Aplicação prática</span>
+        <h2 id="publico-heading">Indicado para equipas que precisam analisar imagens com rigor.</h2>
+        <p>O produto pode ser adaptado a diferentes contextos profissionais onde a imagem digital precisa de ser tratada como fonte de informação.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="audience-tile">
+            <i class="bi bi-shield-check" aria-hidden="true"></i>
+            <h3>Análise e investigação</h3>
+            <p>Consulta de dados técnicos, origem, datas e coordenadas para apoiar processos de verificação e documentação.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="audience-tile">
+            <i class="bi bi-map" aria-hidden="true"></i>
+            <h3>Operações com componente geográfica</h3>
+            <p>Apoio a equipas que precisam relacionar imagens com localização, rotas, pontos de ocorrência ou áreas de trabalho.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <article class="audience-tile">
+            <i class="bi bi-briefcase" aria-hidden="true"></i>
+            <h3>Gestão documental</h3>
+            <p>Organização de imagens e emissão de relatórios para anexar a processos internos, auditorias ou documentação técnica.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-product alt" aria-labelledby="tecnologia-heading">
+    <div class="container">
+      <div class="product-section-heading" data-aos="fade-up">
+        <span class="kicker">Base técnica</span>
+        <h2 id="tecnologia-heading">Software desktop com arquitetura modular.</h2>
+        <p>
+          O sistema foi desenvolvido com separação entre interface, controladores, serviços, modelo de dados e utilitários, permitindo evolução organizada e manutenção técnica mais segura.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="tech-tile">
+            <i class="bi bi-window-desktop" aria-hidden="true"></i>
+            <h3>JavaFX + FXML</h3>
+            <p>Interface desktop construída com telas FXML, estilos CSS e componentes JavaFX.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <article class="tech-tile">
+            <i class="bi bi-diagram-3" aria-hidden="true"></i>
+            <h3>Camada de serviços</h3>
+            <p>Serviços dedicados para imagem, metadados, ficheiros, mapa, miniaturas e relatórios.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <article class="tech-tile">
+            <i class="bi bi-tags" aria-hidden="true"></i>
+            <h3>EXIF + JSON</h3>
+            <p>Leitura de metadados com bibliotecas especializadas e enriquecimento de dados geográficos.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <article class="tech-tile">
+            <i class="bi bi-box-seam" aria-hidden="true"></i>
+            <h3>Empacotamento</h3>
+            <p>Base preparada para distribuição Windows com runtime, app-image, instalador EXE ou MSI.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-cta" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="product-cta-box" data-aos="fade-up">
+        <div>
+          <h2 id="cta-heading">Quer um software à medida para a sua empresa?</h2>
+          <p>A JM Tecnologias desenvolve soluções desktop, web e móveis alinhadas ao fluxo real do seu negócio.</p>
+        </div>
+        <a href="contactos.html#formulario" class="btn-corporate btn-corporate-primary">Falar com a JM Tecnologias</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer" class="footer footer-corporate">
+  <div class="container">
+    <div class="footer-main-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="logo d-flex align-items-center jm-logo footer-logo" aria-label="JM Tecnologias">
+          <img src="assets/img/isotipo.svg" alt="" class="jm-logo-mark" aria-hidden="true">
+          <span class="sitename">JM Tecnologias</span>
+        </a>
+        <p>Websites, software, e-mails corporativos e soluções tecnológicas para empresas que precisam de mais estrutura, presença e execução profissional.</p>
+        <div class="footer-brand-social">
+          <a href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          <a href="mailto:comercial@jm-tecnologias.co.mz" class="footer-social-link" aria-label="E-mail"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+          <a href="tel:+258847100793" class="footer-social-link" aria-label="Telefone"><i class="bi bi-telephone" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicos.html">Nossos Serviços</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="servicos.html">Criação de websites</a></li>
+          <li><a href="servicos.html">Software à medida</a></li>
+          <li><a href="servicos.html">E-mails corporativos</a></li>
+          <li><a href="servicos.html">Aplicações móveis</a></li>
+          <li><a href="servicos.html">Consultoria em TI</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contacto</h4>
+        <ul class="footer-contact-list">
+          <li>Bairro Patrice Lumumba - Infulene, Quarteirão n.º 2, Rua A, 36868, Matola-Machava</li>
+          <li><a href="tel:+258847100793">+258 84 710 0793</a></li>
+          <li><a href="tel:+258878201993">+258 87 820 1993</a></li>
+          <li><a href="mailto:comercial@jm-tecnologias.co.mz">comercial@jm-tecnologias.co.mz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom-row">
+      <p>© 2025 <strong>JM Tecnologias</strong> - Todos os direitos reservados.</p>
+      <div class="footer-legal-links">
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        <a href="termos-condicoes.html">Termos de Uso</a>
+      </div>
+      <a class="footer-inline-cta" href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i> Falar com a equipa
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-actions" aria-label="Ações rápidas">
+  <a href="https://wa.me/258847100793" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+</div>
+<div id="preloader" aria-hidden="true"></div>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jm-custom.js"></script>
+</body>
+</html>
