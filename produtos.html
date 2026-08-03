@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-MZ">
 <head>
   <meta charset="utf-8">
@@ -6,7 +6,7 @@
   <meta http-equiv="content-language" content="pt-MZ">
   <title>Produtos Desenvolvidos | JM Tecnologias</title>
   <meta name="description" content="Galeria de produtos e softwares desenvolvidos pela JM Tecnologias para empresas em Mocambique.">
-  <meta name="keywords" content="produtos JM Tecnologias, software desenvolvido em Mocambique, sistemas empresariais, JM Vision Intelligence System">
+  <meta name="keywords" content="produtos JM Tecnologias, software desenvolvido em Mocambique, sistemas empresariais, JM Vision Intelligence System, JM-InvSM, software de facturacao">
   <meta name="author" content="JM Tecnologias">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#0b1220">
@@ -136,6 +136,8 @@
 
     .product-card {
       height: 100%;
+      display: flex;
+      flex-direction: column;
       border-radius: 8px;
       overflow: hidden;
       background: rgba(15, 23, 42, .78);
@@ -151,6 +153,7 @@
 
     .product-card-media {
       position: relative;
+      height: 245px;
       min-height: 245px;
       background:
         linear-gradient(135deg, rgba(56, 189, 248, .2), rgba(34, 197, 94, .16)),
@@ -208,8 +211,14 @@
       background: rgba(14, 165, 233, .28);
     }
 
+    .product-card-media.invsm-media { background: linear-gradient(135deg, rgba(34, 211, 238, .16), rgba(15, 23, 42, .35)), url("assets/img/jm-invsm/dashboard.png") top center/cover no-repeat; }
+    .product-card-media.waiterapp-media { background: linear-gradient(135deg, rgba(249, 115, 22, .08), rgba(15, 23, 42, .22)), url("assets/img/waiterapp/02_restaurante_categorias.png") center 18%/cover no-repeat; }
+
     .product-card-body {
       padding: 26px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
     }
 
     .product-card-body h3 {
@@ -223,6 +232,11 @@
       color: #94a3b8;
       line-height: 1.75;
       margin-bottom: 20px;
+    }
+
+    .product-card-body .btn-corporate {
+      align-self: flex-start;
+      margin-top: auto;
     }
 
     .product-tags {
@@ -381,7 +395,7 @@
       </div>
 
       <div class="row g-4 align-items-stretch">
-        <div class="col-lg-7" data-aos="fade-up">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
           <article class="product-card">
             <div class="product-card-media">
               <span class="product-card-badge">Software desktop</span>
@@ -410,13 +424,27 @@
           </article>
         </div>
 
-        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-          <article class="coming-soon-card">
-            <i class="bi bi-plus-square" aria-hidden="true"></i>
-            <h3>Novos produtos em desenvolvimento</h3>
-            <p>
-              Esta galeria pode receber outros sistemas desenvolvidos pela JM Tecnologias, como plataformas web, sistemas internos, aplicações móveis, automações empresariais e soluções de monitoria.
-            </p>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="product-card">
+            <div class="product-card-media invsm-media"><span class="product-card-badge">Gestão comercial</span></div>
+            <div class="product-card-body">
+              <h3>JM-InvSM</h3>
+              <p>Sistema desktop integrado para facturação, vendas, POS, compras, pagamentos, clientes e controlo de stock por produto, lote e armazém.</p>
+              <div class="product-tags" aria-label="Módulos e recursos"><span>Facturação</span><span>Stock</span><span>POS</span><span>Pagamentos</span><span>Desktop</span></div>
+              <a href="galery/jm-invsm.html" class="btn-corporate btn-corporate-primary">Ver detalhes do produto</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <article class="product-card">
+            <div class="product-card-media waiterapp-media"><span class="product-card-badge">Restaurantes &amp; atendimento</span></div>
+            <div class="product-card-body">
+              <h3>waiterApp</h3>
+              <p>Plataforma para menu digital, pedidos à mesa, personalização, pagamento e acompanhamento em tempo real, ligada a um backoffice completo para a operação do restaurante.</p>
+              <div class="product-tags" aria-label="Módulos e recursos"><span>Menu digital</span><span>Pedidos</span><span>Mesas</span><span>Tempo real</span><span>Backoffice</span></div>
+              <a href="galery/waiterapp.html" class="btn-corporate btn-corporate-primary">Ver detalhes do produto</a>
+            </div>
           </article>
         </div>
       </div>
@@ -466,6 +494,8 @@
         <h4>Produtos</h4>
         <ul>
           <li><a href="galery/jm-vision-intelligence-system.html">JM Vision Intelligence System</a></li>
+          <li><a href="galery/jm-invsm.html">JM-InvSM</a></li>
+          <li><a href="galery/waiterapp.html">waiterApp</a></li>
           <li><a href="contactos.html#formulario">Solicitar software à medida</a></li>
         </ul>
       </div>
@@ -507,3 +537,4 @@
 <script src="assets/js/jm-custom.js"></script>
 </body>
 </html>
+
